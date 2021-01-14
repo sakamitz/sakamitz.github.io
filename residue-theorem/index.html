@@ -27,16 +27,16 @@
 <meta property="og:site_name" content="typowritter">
 <meta property="og:description" content="留数定理 我们知道，留数定理可以将复变函数的回路积分转化为被积函数在回路所围区域上各奇点的留数之和，即 \[ \oint_lf(z)dz&#x3D;2\pi i\sum_{j&#x3D;1}^nRes\,f(b_j) \]">
 <meta property="og:locale">
-<meta property="og:image" content="http://yxnan.tk/images/residue-theorem/1.png">
-<meta property="og:image" content="http://yxnan.tk/images/residue-theorem/2.png">
+<meta property="og:image" content="http://yxnan.tk/blog/images/residue-theorem/1.png">
+<meta property="og:image" content="http://yxnan.tk/blog/images/residue-theorem/2.png">
 <meta property="article:published_time" content="2019-11-14T16:43:02.000Z">
-<meta property="article:modified_time" content="2020-08-03T19:30:02.325Z">
+<meta property="article:modified_time" content="2021-01-14T20:50:55.721Z">
 <meta property="article:author" content="yxnan">
 <meta property="article:tag" content="Math in Practice">
 <meta property="article:tag" content="Theorem">
 <meta property="article:tag" content="Complex Number">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yxnan.tk/images/residue-theorem/1.png">
+<meta name="twitter:image" content="http://yxnan.tk/blog/images/residue-theorem/1.png">
 
 <link rel="canonical" href="http://yxnan.tk/blog/residue-theorem/">
 
@@ -201,7 +201,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-08-04 03:30:02" itemprop="dateModified" datetime="2020-08-04T03:30:02+08:00">2020-08-04</time>
+                <time title="Modified: 2021-01-15 04:50:55" itemprop="dateModified" datetime="2021-01-15T04:50:55+08:00">2021-01-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -229,7 +229,7 @@
 \oint_lf(z)dz=2\pi i\sum_{j=1}^nRes\,f(b_j)
 \]</span></p>
 <a id="more"></a>
-<p><strong>将实变函数定积分与复变回路积分联系起来</strong>的要点就是：由于定积分 <span class="math inline">\(\int_a^bf(x)dx\)</span> 的积分区间 <span class="math inline">\([a,b]\)</span> 可以看成是复数平面上一段 <span class="math inline">\(l_1\)</span>，我们另外补上一段曲线 <span class="math inline">\(l_2\)</span>，使 <span class="math inline">\(l_1\)</span> 和 <span class="math inline">\(l_2\)</span> 合成回路 <span class="math inline">\(l\)</span>，<span class="math inline">\(l\)</span> 包围着区域 <span class="math inline">\(B\)</span>，将 <span class="math inline">\(f(x)\)</span> 解析延拓到区域 <span class="math inline">\(B\)</span>（对于大部分连续函数来说，这个延拓往往只是把 <span class="math inline">\(f(x)\)</span> 改为 <span class="math inline">\(f(z)\)</span> 而已），并将它沿着 <span class="math inline">\(l\)</span> 积分， <img src="/images/residue-theorem/1.png" /></p>
+<p><strong>将实变函数定积分与复变回路积分联系起来</strong>的要点就是：由于定积分 <span class="math inline">\(\int_a^bf(x)dx\)</span> 的积分区间 <span class="math inline">\([a,b]\)</span> 可以看成是复数平面上一段 <span class="math inline">\(l_1\)</span>，我们另外补上一段曲线 <span class="math inline">\(l_2\)</span>，使 <span class="math inline">\(l_1\)</span> 和 <span class="math inline">\(l_2\)</span> 合成回路 <span class="math inline">\(l\)</span>，<span class="math inline">\(l\)</span> 包围着区域 <span class="math inline">\(B\)</span>，将 <span class="math inline">\(f(x)\)</span> 解析延拓到区域 <span class="math inline">\(B\)</span>（对于大部分连续函数来说，这个延拓往往只是把 <span class="math inline">\(f(x)\)</span> 改为 <span class="math inline">\(f(z)\)</span> 而已），并将它沿着 <span class="math inline">\(l\)</span> 积分， <img src="/blog/images/residue-theorem/1.png" /></p>
 <p><span class="math display">\[
 \oint_lf(z)dz=\int_{l_1}f(x)dx+\int_{l_2}f(z)dz
 \]</span> 上式左边可以用留数定理，右边第一个积分就是所求的定积分，如果右边第二个积分容易算出（往往是证明为0）或可用第一个积分表出，问题就解决了。</p>
@@ -283,7 +283,7 @@ I=\int_0^{\infty}e^{-ax^2}cosbx\,dx\quad(a&gt;0,b&gt;0)
 f(Re^{i\theta})=e^{-aR^2(cos\,2\theta+i\,sin\,2\theta)}\cdot e^{-bR(sin\,\theta-i\,cos\,\theta)}
 \]</span> 且当 <span class="math inline">\(R\rightarrow\infty\)</span> 时 <span class="math inline">\(|f(Re^{i\theta})|\approx e^{-aR^2cos\,2\theta}\rightarrow\infty\Big(\frac \pi 4&lt;\theta&lt;\frac{3\pi}4\Big)\)</span> ，所以 <span class="math inline">\(|z|=R\)</span> 的 <span class="math inline">\(\frac \pi 4&lt;\theta&lt;\frac{3\pi}4\)</span> 部分不可取.</p>
 <div class="figure">
-<img src="/images/residue-theorem/2.png" />
+<img src="/blog/images/residue-theorem/2.png" />
 
 </div>
 <p><br></p>
