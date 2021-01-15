@@ -28,7 +28,7 @@
 <meta property="og:description" content="原文地址：https:&#x2F;&#x2F;liam.page&#x2F;2017&#x2F;05&#x2F;01&#x2F;the-correct-way-to-use-differential-operator&#x2F;  此篇讨论很小的「一点」——关于如何正确排版微分算子。 所谓微分算子 (differential operator)，也就是 \(\mathrm{d}x\) 中的 \(\mathrm{d}\). 由于微分算子形式上就是拉丁字母 d；并且国">
 <meta property="og:locale">
 <meta property="article:published_time" content="2020-07-15T06:12:23.000Z">
-<meta property="article:modified_time" content="2021-01-15T17:03:51.869Z">
+<meta property="article:modified_time" content="2021-01-15T19:01:37.316Z">
 <meta property="article:author" content="yxnan">
 <meta property="article:tag" content="LaTeX">
 <meta name="twitter:card" content="summary">
@@ -196,7 +196,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-01-16 01:03:51" itemprop="dateModified" datetime="2021-01-16T01:03:51+08:00">2021-01-16</time>
+                <time title="Modified: 2021-01-16 03:01:37" itemprop="dateModified" datetime="2021-01-16T03:01:37+08:00">2021-01-16</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -243,7 +243,7 @@
 <p>最终解决问题，应该对微分算子有这样的定义</p>
 <figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="keyword">\newcommand</span>*&#123;<span class="keyword">\dif</span>&#125;&#123;<span class="keyword">\mathop</span>&#123;&#125;<span class="keyword">\!</span><span class="keyword">\mathrm</span>&#123;d&#125;&#125;</span><br></pre></td></tr></table></figure>
 <p>在这个定义中，拉丁字母 d 本身的特点得到了保留（比如基线是正常的）。此外，在 <code>\mathrm&#123;d&#125;</code> 的左边，插入了一个空白的 <code>\mathop&#123;&#125;</code>；其左边的空白保留，而右边与 <code>\mathrm&#123;d&#125;</code> 之间的距离，则由 <code>\!</code> 抑制。这样就达成了我们的目标。</p>
-<p>参考：http://www.tug.org/TUGboat/Articles/tb18-1/tb54becc.pdf#page=8</p>
+<p>参考：<a target="_blank" rel="noopener" href="http://www.tug.org/TUGboat/Articles/tb18-1/tb54becc.pdf#page=8">Typesetting mathematics for science and technology according to ISO 31/XI</a></p>
 
     </div>
 
