@@ -27,14 +27,14 @@
 <meta property="og:site_name" content="typowritter">
 <meta property="og:description" content="在 The 8-Bit Guy 的视频里，经常可以看到 6502 这款微控制器。放了几天假，突然想自己实现一下它的控制逻辑，于是找了些资料就开干了。 6502 大概是被复刻次数最多的微控制器了，之前甚至还看到全用分离器件实现的版本，因此想着自己实现也不是什么难事。 代码：typowritter&#x2F;verilog-6502">
 <meta property="og:locale">
-<meta property="og:image" content="http://ladybug.xs4all.nl/arlet/fpga/6502/6502_block_diagram.jpg">
+<meta property="og:image" content="http://yxnan.tk/blog/images/verilog-6502/6502-block-diagram.jpg">
 <meta property="article:published_time" content="2020-12-27T04:22:49.000Z">
-<meta property="article:modified_time" content="2021-01-15T14:49:08.186Z">
+<meta property="article:modified_time" content="2021-01-15T14:58:14.539Z">
 <meta property="article:author" content="yxnan">
 <meta property="article:tag" content="6502">
 <meta property="article:tag" content="Verilog">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://ladybug.xs4all.nl/arlet/fpga/6502/6502_block_diagram.jpg">
+<meta name="twitter:image" content="http://yxnan.tk/blog/images/verilog-6502/6502-block-diagram.jpg">
 
 <link rel="canonical" href="http://yxnan.tk/blog/verilog-6502/">
 
@@ -199,7 +199,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2021-01-15 22:49:08" itemprop="dateModified" datetime="2021-01-15T22:49:08+08:00">2021-01-15</time>
+                <time title="Modified: 2021-01-15 22:58:14" itemprop="dateModified" datetime="2021-01-15T22:58:14+08:00">2021-01-15</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -231,7 +231,7 @@
 <p>目前 IRQ/NMI 处理还有问题，缺少 PC 和 PSR 入栈过程。需要和 core sequencer 结合起来实现。</p>
 <p>总体设计参考了这张图：<a target="_blank" rel="noopener" href="http://ladybug.xs4all.nl/arlet/fpga/6502/6502_block_diagram.jpg">6502 block diagram</a></p>
 <div class="figure">
-<img src="http://ladybug.xs4all.nl/arlet/fpga/6502/6502_block_diagram.jpg" alt="6502 block diagram" />
+<img src="/blog/images/verilog-6502/6502-block-diagram.jpg" alt="6502 block diagram" />
 <p class="caption">6502 block diagram</p>
 </div>
 
